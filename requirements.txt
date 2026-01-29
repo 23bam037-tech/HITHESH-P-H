@@ -1,0 +1,36 @@
+# AI Career Path Optimizer - System & Project Requirements
+
+# 1. Runtime Environment
+# ---------------------------------------------------------
+Node.js: v18.0.0 or higher
+npm: v9.0.0 or higher
+Browser: Modern evergreen browser (Chrome, Edge, Firefox, Safari)
+
+# 2. Core Dependencies (Managed via npm)
+# ---------------------------------------------------------
+react: ^19.0.0              # UI Framework
+react-dom: ^19.0.0          # DOM Rendering
+@google/genai: ^1.3.0      # Gemini 3.5 AI Integration
+lucide-react: ^0.460.0      # Icon System
+recharts: ^2.13.3          # Career ROI Visualization
+vite: ^6.0.5                # Build Tool & Dev Server
+@vitejs/plugin-react: ^4.3.4 # React Fast Refresh Support
+
+# 3. External Assets & CDNs
+# ---------------------------------------------------------
+Tailwind CSS: (Loaded via CDN in index.html)
+Google Fonts: Inter (300-900 weight)
+PDF.js: v3.4.120 (For resume deconstruction)
+
+# 4. API Credentials
+# ---------------------------------------------------------
+Google Gemini API Key: Required
+- Must be set in a `.env` file as `API_KEY=your_key`
+- Or passed as a system environment variable `process.env.API_KEY`
+
+# 5. Project Permissions
+# ---------------------------------------------------------
+Camera: Not required
+Microphone: Not required
+Geolocation: Optional (for location-based job matching)
+File System: Required for PDF Resume uploads
